@@ -21,7 +21,7 @@ func main() {
 	v := url.Values{}
 	v.Set("To", "+998998280098")
 	v.Set("From", "+16266289463")
-	v.Set("Body", "hehehe Umidjon qaleysiz?")
+	v.Set("Body", "You are pretty Welcome to put your custom SMS here!")
 	reqBody := *strings.NewReader(v.Encode())
 
 	// New client
