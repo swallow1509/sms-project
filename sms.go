@@ -10,17 +10,17 @@ import (
 )
 
 const (
-	accountSID = "AC8a33c89d0a3b3f53d455c55e720f4805"
+	accountSID = "TwilioSID"
 	authToken  = "b57f7e3e1678236762b7bdca5fe22d90"
-	urlString  = "https://api.twilio.com/2010-04-01/Accounts/AC8a33c89d0a3b3f53d455c55e720f4805/Messages.json"
+	urlString  = "https://api.twilio.com/2010-04-01/Accounts/accountSID/Messages.json"
 )
 
 func main() {
 
 	// Basic data for our message
 	v := url.Values{}
-	v.Set("To", "+998998280098")
-	v.Set("From", "+16266289463")
+	v.Set("To", "+Receiver")
+	v.Set("From", "+VirtualTwilioSenderNumber")
 	v.Set("Body", "You are pretty Welcome to put your custom SMS here!")
 	reqBody := *strings.NewReader(v.Encode())
 
