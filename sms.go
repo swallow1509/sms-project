@@ -11,7 +11,7 @@ import (
 
 const (
 	accountSID = "TwilioSID"
-	authToken  = "b57f7e3e1678236762b7bdca5fe22d90"
+	authToken  = "TwilioToken"
 	urlString  = "https://api.twilio.com/2010-04-01/Accounts/accountSID/Messages.json"
 )
 
